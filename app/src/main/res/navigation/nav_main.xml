@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main.xml"
+    app:startDestination="@id/continentFragment">
+
+    <fragment
+        android:id="@+id/continentFragment"
+        android:name="com.example.home_work_8.ContinentFragment"
+        android:label="fragment_continent"
+        tools:layout="@layout/fragment_continent" >
+        <action
+            android:id="@+id/action_continentFragment_to_SAFragment"
+            app:destination="@id/SAFragment" />
+        <action
+            android:id="@+id/action_continentFragment_to_EUFragment"
+            app:destination="@id/EUFragment" />
+        <action
+            android:id="@+id/action_continentFragment_to_NAFragment"
+            app:destination="@id/NAFragment" />
+        <action
+            android:id="@+id/action_continentFragment_to_AFFragment"
+            app:destination="@id/AFFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AFFragment"
+        android:name="com.example.home_work_8.AFFragment"
+        android:label="fragment_a_f"
+        tools:layout="@layout/fragment_a_f" />
+    <fragment
+        android:id="@+id/EUFragment"
+        android:name="com.example.home_work_8.EUFragment"
+        android:label="fragment_e_u"
+        tools:layout="@layout/fragment_e_u" />
+    <fragment
+        android:id="@+id/NAFragment"
+        android:name="com.example.home_work_8.NAFragment"
+        android:label="fragment_n_a"
+        tools:layout="@layout/fragment_n_a" />
+    <fragment
+        android:id="@+id/SAFragment"
+        android:name="com.example.home_work_8.SAFragment"
+        android:label="fragment_s_a"
+        tools:layout="@layout/fragment_s_a" />
+</navigation>
